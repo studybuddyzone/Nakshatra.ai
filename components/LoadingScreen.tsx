@@ -1,0 +1,1 @@
+export default function LoadingScreen() { return <div role="status" aria-label="Loading" className="fixed inset-0 z-[70] grid place-items-center bg-[#050608]"><div className="h-2 w-2 animate-ping rounded-full bg-cyan-300" /></div>; }
