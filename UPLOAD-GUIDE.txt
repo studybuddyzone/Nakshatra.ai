@@ -1,0 +1,54 @@
+NAKSHATRA - GITHUB UPLOAD GUIDE
+===============================
+
+IMPORTANT: GitHub par "nakshatra" folder ke ANDAR ki files upload karni hain,
+folder ko khud nahi. Repo ke root (sabse upar) mein ye dikhna chahiye:
+
+nakshatra (GitHub repository ka root)
+|
+|-- package.json
+|-- tsconfig.json
+|-- next.config.js
+|-- postcss.config.js
+|-- tailwind.config.js
+|-- .gitignore
+|-- .env.example
+|-- UPLOAD-GUIDE.txt
+|
+|-- app/
+|   |-- globals.css
+|   |-- layout.tsx
+|   |-- page.tsx            <-- MAIN PAGE (website yahi se khulti hai)
+|
+|-- components/
+|   |-- Navbar.tsx
+|   |-- Hero.tsx
+|   |-- ParticleCharacter.tsx
+|   |-- CharacterSelector.tsx
+|   |-- CTAButtons.tsx
+|   |-- FloatingContact.tsx
+|   |-- LoadingScreen.tsx
+|
+|-- lib/
+|   |-- particleMorph.ts
+|   |-- animation.ts
+|
+|-- public/
+    |-- models/.gitkeep
+    |-- textures/.gitkeep
+    |-- fonts/.gitkeep
+    |-- downloads/          <-- (apni .exe file yahan rakhein: yourai-setup.exe)
+
+STEPS
+-----
+1. ZIP ko extract karein. "nakshatra" folder khulega.
+2. github.com par New Repository banayein, naam: nakshatra. (Create repository)
+3. "uploading an existing file" link dabayein.
+4. nakshatra folder ke ANDAR jaakar saari files aur folders select karein
+   (app, components, lib, public, package.json, ...) aur drag-drop karein.
+5. "Commit changes" dabayein.
+6. vercel.com par GitHub se login -> Add New -> Project -> nakshatra chunein -> Deploy.
+
+Download button ke liye: public/downloads/ folder banakar usme
+yourai-setup.exe rakhein, ya components/CTAButtons.tsx mein DOWNLOAD_URL badlein.
+WhatsApp number: components/FloatingContact.tsx mein WA wali line badlein.
